@@ -6,7 +6,7 @@ You can change their values by performing the following commands:
 The coommand L changes te value of L to 2 * L - R
 the command R changes the values of R to 2 * R - L
 
-You are an integer N =. The goal is to find the minimum number of comands after which L = N or R = N
+You are given an integer N =. The goal is to find the minimum number of comands after which L = N or R = N
 
 **/
 
@@ -56,12 +56,18 @@ class Solution {
     }
     
     public int moveLeft(ArrayList<String> moves, int L, int R) {
-        moves.add("L");
-        return 2 * L - R;
+      moves.add("L");
+      return 2 * L - R;
     }
     
     public int moveRight(ArrayList<String> moves, int L, int R) {
-       moves.add("R"); 
-       return 2 * R - L;
+      moves.add("R"); 
+      return 2 * R - L;
+    }
+
+    public static void main(String[] args) {
+      Solution sol = new Solution();
+      int ans = sol.solution(15);
+      System.out.printf("for N = %s ans = %s\n", 15, ans);
     }
 }
