@@ -26,7 +26,6 @@
                 }
 
                 sb.delete(i, i + width);
-                break;
             }
         }
 
@@ -44,6 +43,7 @@
         String[][] array = { 
             { "acbbbcc", "3" }, 
             {"accab", "2"},
+            {"abbcbccbbbcaaaaacc", "3"}
         };
 
         for (int i = 0; i < array.length; i++) {
